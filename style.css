@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Fira Sans", sans-serif;
+}
+
+.container-1 {
+  display: grid;
+  height: 100px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "logo nav-link";
+  border-top: solid rgb(193, 44, 44) 10px;
+  border-bottom: solid rgba(0, 0, 0, 0.421) 2px;
+}
+.nav-option {
+  background-color: rgb(255, 255, 255);
+  grid-area: nav-link;
+  padding: 25px;
+}
+
+.nav-link {
+  right: 0px;
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  width: 500px;
+  margin: 1px;
+  font-weight: bolder;
+  font-size: 20px;
+}
+.nav-button {
+  list-style: none;
+}
+.nav-button a {
+  color: black;
+  text-decoration: none;
+}
+a:hover {
+  color: coral;
+}
+.nav-home {
+  list-style: none;
+}
+#home-active a {
+  color: orange;
+  text-decoration: none;
+}
+.container-2 {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 500px;
+  grid-template-areas:
+    "main main"
+    "pic artcl";
+}
+.main {
+  text-align: center;
+  grid-area: main;
+  padding: 50px;
+  background-blend-mode: darken;
+  background: rgba(0, 0, 0, 0.394) url(images/amabg.jfif);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.artcl h1 {
+  padding: 10px;
+  color: rgb(255, 110, 58);
+  text-align: center;
+}
+.artcl p {
+  text-align: justify;
+}
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "footer footer footer footer";
+}
+.foot {
+  padding: 10px;
+  display: flex;
+  grid-area: footer;
+  justify-content: space-evenly;
+  background-color: rgba(17, 10, 10, 0.85);
+}
